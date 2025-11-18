@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Administrator\Desktop\unpack\Plugin.Core.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D889CAF-2B61-4AE8-9E26-13413DE1D689}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Plugin.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.2510.3</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Npgsql" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0`2.cs" />
+    <Compile Include="Class8.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="Class23.cs" />
+    <Compile Include="Class37.cs" />
+    <Compile Include="dummy_ptr\{992044d9-fc6a-4ce3-a566-8a12e0526213}.cs" />
+    <Compile Include="Plugin\Core\ConfigLoader.cs" />
+    <Compile Include="Plugin\Core\CLogger.cs" />
+    <Compile Include="Plugin\Core\Translation.cs" />
+    <Compile Include="Plugin\Core\SQL\DaoManagerSQL.cs" />
+    <Compile Include="Plugin\Core\SQL\ConnectionSQL.cs" />
+    <Compile Include="Plugin\Core\XML\BattleBoxXML.cs" />
+    <Compile Include="Plugin\Core\XML\BattleRewardXML.cs" />
+    <Compile Include="Plugin\Core\XML\CompetitiveXML.cs" />
+    <Compile Include="Plugin\Core\XML\CouponEffectXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventLoginXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventBoostXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventPlaytimeXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventQuestXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventRankUpXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventVisitXML.cs" />
+    <Compile Include="Plugin\Core\XML\EventXmasXML.cs" />
+    <Compile Include="Plugin\Core\XML\GameRuleXML.cs" />
+    <Compile Include="Plugin\Core\XML\InternetCafeXML.cs" />
+    <Compile Include="Plugin\Core\XML\MissionAwardXML.cs" />
+    <Compile Include="Plugin\Core\XML\MissionConfigXML.cs" />
+    <Compile Include="Plugin\Core\XML\PermissionXML.cs" />
+    <Compile Include="Plugin\Core\XML\RedeemCodeXML.cs" />
+    <Compile Include="Plugin\Core\XML\SeasonChallengeXML.cs" />
+    <Compile Include="Plugin\Core\XML\SeasonPassXML.cs" />
+    <Compile Include="Plugin\Core\XML\SynchronizeXML.cs" />
+    <Compile Include="Plugin\Core\XML\TemplatePackXML.cs" />
+    <Compile Include="Plugin\Core\XML\ClanRankXML.cs" />
+    <Compile Include="Plugin\Core\XML\DirectLibraryXML.cs" />
+    <Compile Include="Plugin\Core\XML\SystemMapXML.cs" />
+    <Compile Include="Plugin\Core\XML\RandomBoxXML.cs" />
+    <Compile Include="Plugin\Core\XML\PlayerRankXML.cs" />
+    <Compile Include="Plugin\Core\XML\SChannelXML.cs" />
+    <Compile Include="Plugin\Core\XML\TitleAwardXML.cs" />
+    <Compile Include="Plugin\Core\XML\TitleSystemXML.cs" />
+    <Compile Include="Plugin\Core\Utility\ColorUtil.cs" />
+    <Compile Include="Plugin\Core\Utility\Bitwise.cs" />
+    <Compile Include="Plugin\Core\Utility\CountryDetector.cs" />
+    <Compile Include="Plugin\Core\Utility\CryptoSyncer.cs" />
+    <Compile Include="Plugin\Core\Utility\ComDiv.cs" />
+    <Compile Include="Plugin\Core\Utility\DateTimeUtil.cs" />
+    <Compile Include="Plugin\Core\Utility\DBQuery.cs" />
+    <Compile Include="Plugin\Core\Utility\ObjectCopier.cs" />
+    <Compile Include="Plugin\Core\Utility\REComparer.cs" />
+    <Compile Include="Plugin\Core\Utility\ArrayEXT.cs" />
+    <Compile Include="Plugin\Core\Utility\SafeList`1.cs" />
+    <Compile Include="Plugin\Core\Utility\StateObject.cs" />
+    <Compile Include="Plugin\Core\Utility\TimerState.cs" />
+    <Compile Include="Plugin\Core\SharpDX\Half.cs" />
+    <Compile Include="Plugin\Core\SharpDX\Half3.cs" />
+    <Compile Include="Plugin\Core\SharpDX\MathUtil.cs" />
+    <Compile Include="Plugin\Core\SharpDX\RawVector3.cs" />
+    <Compile Include="Plugin\Core\SharpDX\Vector3.cs" />
+    <Compile Include="Plugin\Core\SharpDX\Vector3Union.cs" />
+    <Compile Include="Plugin\Core\Filters\NickFilter.cs" />
+    <Compile Include="Plugin\Core\Settings\ConfigEngine.cs" />
+    <Compile Include="Plugin\Core\RAW\MissionCardRAW.cs" />
+    <Compile Include="Plugin\Core\Network\BaseClientPacket.cs" />
+    <Compile Include="Plugin\Core\Network\SyncClientPacket.cs" />
+    <Compile Include="Plugin\Core\Network\SyncServerPacket.cs" />
+    <Compile Include="Plugin\Core\Network\BaseServerPacket.cs" />
+    <Compile Include="Plugin\Core\Models\BattleBoxItem.cs" />
+    <Compile Include="Plugin\Core\Models\BattleBoxModel.cs" />
+    <Compile Include="Plugin\Core\Models\BattleRewardItem.cs" />
+    <Compile Include="Plugin\Core\Models\BattleRewardModel.cs" />
+    <Compile Include="Plugin\Core\Models\CartGoods.cs" />
+    <Compile Include="Plugin\Core\Models\CommandHelper.cs" />
+    <Compile Include="Plugin\Core\Models\CompetitiveRank.cs" />
+    <Compile Include="Plugin\Core\Models\EventLoginModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventBoostModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventPlaytimeModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventQuestModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventRankUpModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventVisitModel.cs" />
+    <Compile Include="Plugin\Core\Models\EventXmasModel.cs" />
+    <Compile Include="Plugin\Core\Models\MissionAwards.cs" />
+    <Compile Include="Plugin\Core\Models\MissionCardAwards.cs" />
+    <Compile Include="Plugin\Core\Models\MissionCardModel.cs" />
+    <Compile Include="Plugin\Core\Models\MissionItemAward.cs" />
+    <Compile Include="Plugin\Core\Models\MissionStore.cs" />
+    <Compile Include="Plugin\Core\Models\NHistoryModel.cs" />
+    <Compile Include="Plugin\Core\Models\PassBoxModel.cs" />
+    <Compile Include="Plugin\Core\Models\PassItemModel.cs" />
+    <Compile Include="Plugin\Core\Models\PCCafeModel.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerBattlepass.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerCharacters.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerCompetitive.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerEquipment.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerMissions.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerQuickstart.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerReport.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerTitles.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerVip.cs" />
+    <Compile Include="Plugin\Core\Models\RecordInfo.cs" />
+    <Compile Include="Plugin\Core\Models\RHistoryModel.cs" />
+    <Compile Include="Plugin\Core\Models\BattlePassModel.cs" />
+    <Compile Include="Plugin\Core\Models\ServerConfig.cs" />
+    <Compile Include="Plugin\Core\Models\ClanTeam.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerSession.cs" />
+    <Compile Include="Plugin\Core\Models\ShopData.cs" />
+    <Compile Include="Plugin\Core\Models\SlotChange.cs" />
+    <Compile Include="Plugin\Core\Models\SlotMatch.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticAcemode.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticBattlecup.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticClan.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticDaily.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticSeason.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticTotal.cs" />
+    <Compile Include="Plugin\Core\Models\StatisticWeapon.cs" />
+    <Compile Include="Plugin\Core\Models\Synchronize.cs" />
+    <Compile Include="Plugin\Core\Models\TitleAward.cs" />
+    <Compile Include="Plugin\Core\Models\TitleModel.cs" />
+    <Compile Include="Plugin\Core\Models\TRuleModel.cs" />
+    <Compile Include="Plugin\Core\Models\VisitItemModel.cs" />
+    <Compile Include="Plugin\Core\Models\BanHistory.cs" />
+    <Compile Include="Plugin\Core\Models\CouponFlag.cs" />
+    <Compile Include="Plugin\Core\Models\AccountStatus.cs" />
+    <Compile Include="Plugin\Core\Models\ClanModel.cs" />
+    <Compile Include="Plugin\Core\Models\ClanBestPlayers.cs" />
+    <Compile Include="Plugin\Core\Models\ClanInvite.cs" />
+    <Compile Include="Plugin\Core\Models\FriendModel.cs" />
+    <Compile Include="Plugin\Core\Models\MessageModel.cs" />
+    <Compile Include="Plugin\Core\Models\CharacterModel.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerFriends.cs" />
+    <Compile Include="Plugin\Core\Models\ItemsModel.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerBonus.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerConfig.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerEvent.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerInfo.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerInventory.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerTopup.cs" />
+    <Compile Include="Plugin\Core\Models\PlayerStatistic.cs" />
+    <Compile Include="Plugin\Core\Models\RankModel.cs" />
+    <Compile Include="Plugin\Core\Models\VisitBoxModel.cs" />
+    <Compile Include="Plugin\Core\Models\TicketModel.cs" />
+    <Compile Include="Plugin\Core\Models\InternetCafe.cs" />
+    <Compile Include="Plugin\Core\Models\MapMatch.cs" />
+    <Compile Include="Plugin\Core\Models\RandomBoxItem.cs" />
+    <Compile Include="Plugin\Core\Models\RandomBoxModel.cs" />
+    <Compile Include="Plugin\Core\Models\FragModel.cs" />
+    <Compile Include="Plugin\Core\Models\FragInfos.cs" />
+    <Compile Include="Plugin\Core\Models\SlotModel.cs" />
+    <Compile Include="Plugin\Core\Models\VoteKickModel.cs" />
+    <Compile Include="Plugin\Core\Models\SChannelModel.cs" />
+    <Compile Include="Plugin\Core\Models\QuickstartModel.cs" />
+    <Compile Include="Plugin\Core\Models\GoodsItem.cs" />
+    <Compile Include="Plugin\Core\Models\ItemsRepair.cs" />
+    <Compile Include="Plugin\Core\Models\Map\MapRule.cs" />
+    <Compile Include="Plugin\Core\Managers\PortalManager.cs" />
+    <Compile Include="Plugin\Core\Managers\ShopManager.cs" />
+    <Compile Include="Plugin\Core\JSON\CommandHelperJSON.cs" />
+    <Compile Include="Plugin\Core\JSON\ResolutionJSON.cs" />
+    <Compile Include="Plugin\Core\JSON\ServerConfigJSON.cs" />
+    <Compile Include="Plugin\Core\Enums\AccountFeatures.cs" />
+    <Compile Include="Plugin\Core\Enums\BattleRewardType.cs" />
+    <Compile Include="Plugin\Core\Enums\CafeEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\ChannelType.cs" />
+    <Compile Include="Plugin\Core\Enums\ClanSearchType.cs" />
+    <Compile Include="Plugin\Core\Enums\CountryFlags.cs" />
+    <Compile Include="Plugin\Core\Enums\ESportTypeEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\ItemCategory.cs" />
+    <Compile Include="Plugin\Core\Enums\ItemEquipType.cs" />
+    <Compile Include="Plugin\Core\Enums\JoinClanType.cs" />
+    <Compile Include="Plugin\Core\Enums\LoggerType.cs" />
+    <Compile Include="Plugin\Core\Enums\MapRules.cs" />
+    <Compile Include="Plugin\Core\Enums\NationsEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\NoteMessageState.cs" />
+    <Compile Include="Plugin\Core\Enums\NoteMessageType.cs" />
+    <Compile Include="Plugin\Core\Enums\PortalBoostEvent.cs" />
+    <Compile Include="Plugin\Core\Enums\PortalEvents.cs" />
+    <Compile Include="Plugin\Core\Enums\ReportType.cs" />
+    <Compile Include="Plugin\Core\Enums\SeasonPassType.cs" />
+    <Compile Include="Plugin\Core\Enums\ShowroomView.cs" />
+    <Compile Include="Plugin\Core\Enums\StageOptions.cs" />
+    <Compile Include="Plugin\Core\Enums\TeamBalance.cs" />
+    <Compile Include="Plugin\Core\Enums\ViewerType.cs" />
+    <Compile Include="Plugin\Core\Enums\AccessLevel.cs" />
+    <Compile Include="Plugin\Core\Enums\CharaDeath.cs" />
+    <Compile Include="Plugin\Core\Enums\CharaKillType.cs" />
+    <Compile Include="Plugin\Core\Enums\ChattingType.cs" />
+    <Compile Include="Plugin\Core\Enums\ClassType.cs" />
+    <Compile Include="Plugin\Core\Enums\ClientLocale.cs" />
+    <Compile Include="Plugin\Core\Enums\CountDownEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\CouponEffects.cs" />
+    <Compile Include="Plugin\Core\Enums\DeadEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\EventErrorEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\FriendChangeState.cs" />
+    <Compile Include="Plugin\Core\Enums\FriendState.cs" />
+    <Compile Include="Plugin\Core\Enums\SChannelType.cs" />
+    <Compile Include="Plugin\Core\Enums\HackType.cs" />
+    <Compile Include="Plugin\Core\Enums\InventoryFlag.cs" />
+    <Compile Include="Plugin\Core\Enums\ItemClass.cs" />
+    <Compile Include="Plugin\Core\Enums\ItemTag.cs" />
+    <Compile Include="Plugin\Core\Enums\KillingMessage.cs" />
+    <Compile Include="Plugin\Core\Enums\MapIdEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\MatchState.cs" />
+    <Compile Include="Plugin\Core\Enums\MissionType.cs" />
+    <Compile Include="Plugin\Core\Enums\NoteMessageClan.cs" />
+    <Compile Include="Plugin\Core\Enums\RequiType.cs" />
+    <Compile Include="Plugin\Core\Enums\ResultIcon.cs" />
+    <Compile Include="Plugin\Core\Enums\RoomStageFlag.cs" />
+    <Compile Include="Plugin\Core\Enums\RoomState.cs" />
+    <Compile Include="Plugin\Core\Enums\RoomCondition.cs" />
+    <Compile Include="Plugin\Core\Enums\RoomWeaponsFlag.cs" />
+    <Compile Include="Plugin\Core\Enums\RoundEndType.cs" />
+    <Compile Include="Plugin\Core\Enums\SlotMatchState.cs" />
+    <Compile Include="Plugin\Core\Enums\SlotState.cs" />
+    <Compile Include="Plugin\Core\Enums\TeamEnum.cs" />
+    <Compile Include="Plugin\Core\Enums\TicketType.cs" />
+    <Compile Include="Plugin\Core\Enums\UdpState.cs" />
+    <Compile Include="Plugin\Core\Enums\VoteKickEnum.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorAlternator.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorAlternatorFactory.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorExtensions.cs" />
+    <Compile Include="Plugin\Core\Colorful\Console.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorManager.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorManagerFactory.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorMapper.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorMappingException.cs" />
+    <Compile Include="Plugin\Core\Colorful\COLORREF.cs" />
+    <Compile Include="Plugin\Core\Colorful\ColorStore.cs" />
+    <Compile Include="Plugin\Core\Colorful\ConsoleAccessException.cs" />
+    <Compile Include="Plugin\Core\Colorful\DefaultFonts.cs" />
+    <Compile Include="Plugin\Core\Colorful\Figlet.cs" />
+    <Compile Include="Plugin\Core\Colorful\FigletFont.cs" />
+    <Compile Include="Plugin\Core\Colorful\Formatter.cs" />
+    <Compile Include="Plugin\Core\Colorful\FrequencyBasedColorAlternator.cs" />
+    <Compile Include="Plugin\Core\Colorful\GradientGenerator.cs" />
+    <Compile Include="Plugin\Core\Colorful\IPrototypable`1.cs" />
+    <Compile Include="Plugin\Core\Colorful\MatchLocation.cs" />
+    <Compile Include="Plugin\Core\Colorful\Pattern`1.cs" />
+    <Compile Include="Plugin\Core\Colorful\PatternBasedColorAlternator`1.cs" />
+    <Compile Include="Plugin\Core\Colorful\PatternCollection`1.cs" />
+    <Compile Include="Plugin\Core\Colorful\StyleClass`1.cs" />
+    <Compile Include="Plugin\Core\Colorful\StyledString.cs" />
+    <Compile Include="Plugin\Core\Colorful\Styler.cs" />
+    <Compile Include="Plugin\Core\Colorful\StyleSheet.cs" />
+    <Compile Include="Plugin\Core\Colorful\TaskQueue.cs" />
+    <Compile Include="Plugin\Core\Colorful\TextAnnotator.cs" />
+    <Compile Include="Plugin\Core\Colorful\TextFormatter.cs" />
+    <Compile Include="Plugin\Core\Colorful\TextPattern.cs" />
+    <Compile Include="Plugin\Core\Colorful\TextPatternCollection.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

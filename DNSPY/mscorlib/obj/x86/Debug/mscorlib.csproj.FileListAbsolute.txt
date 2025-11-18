@@ -1,0 +1,2 @@
+C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\mscorlib\obj\x86\Debug\mscorlib.csproj.AssemblyReference.cache
+C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\mscorlib\obj\x86\Debug\mscorlib.csproj.CoreCompileInputs.cache

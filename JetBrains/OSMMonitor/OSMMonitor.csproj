@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Administrator\Desktop\unpack\OSMMonitor-unp.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17E7E086-3D2C-4A31-896A-91F96C7CA4DC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>OSM-Monitor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.2510.3</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Plugin.Core">
+      <HintPath>lib\Plugin.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Server.Auth">
+      <HintPath>lib\Server.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Server.Game">
+      <HintPath>lib\Server.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Server.Match">
+      <HintPath>lib\Server.Match.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="GClass1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Enum1.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="GClass2.cs" />
+    <Compile Include="GClass3.cs" />
+    <Compile Include="GClass4.cs" />
+    <Compile Include="GClass5.cs" />
+    <Compile Include="GClass6.cs" />
+    <Compile Include="GClass7.cs" />
+    <Compile Include="GClass8.cs" />
+    <Compile Include="GClass9.cs" />
+    <Compile Include="GClass10.cs" />
+    <Compile Include="GClass11.cs" />
+    <Compile Include="GClass12.cs" />
+    <Compile Include="GClass13.cs" />
+    <Compile Include="GClass14.cs" />
+    <Compile Include="Class11.cs" />
+    <Compile Include="FormAdditional.cs" />
+    <Compile Include="FormConfig.cs" />
+    <Compile Include="FormMonitor.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="GClass15.cs" />
+    <Compile Include="GEnum1.cs" />
+    <Compile Include="GEnum2.cs" />
+    <Compile Include="VerticalProgressBar.cs" />
+    <Compile Include="Class15.cs" />
+    <Compile Include="GInterface0.cs" />
+    <Compile Include="GInterface1.cs" />
+    <Compile Include="GInterface2.cs" />
+    <Compile Include="GEnum3.cs" />
+    <Compile Include="GEnum4.cs" />
+    <Compile Include="dummy_ptr\{08d85093-d024-46d5-85ae-e584965598c4}.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class11.resx" />
+    <EmbeddedResource Include="FormAdditional.resx" />
+    <EmbeddedResource Include="FormConfig.resx" />
+    <EmbeddedResource Include="FormMonitor.resx" />
+    <EmbeddedResource Include="MainForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

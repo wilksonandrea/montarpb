@@ -1,0 +1,63 @@
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+[CompilerGenerated]
+internal sealed class Class19
+{
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 6)]
+	internal struct Struct0
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 24)]
+	internal struct Struct1
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 35)]
+	internal struct Struct2
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 36)]
+	internal struct Struct3
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 44)]
+	internal struct Struct4
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 72)]
+	internal struct Struct5
+	{
+	}
+
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 742)]
+	internal struct Struct6
+	{
+	}
+
+	internal static readonly Struct3 struct3_0/* Not supported: data(11 00 00 00 0F 00 00 00 0D 00 00 00 0B 00 00 00 09 00 00 00 07 00 00 00 05 00 00 00 03 00 00 00 01 00 00 00) */;
+
+	internal static readonly Struct5 struct5_0/* Not supported: data(00 00 00 00 01 00 00 00 02 00 00 00 03 00 00 00 04 00 00 00 05 00 00 00 06 00 00 00 07 00 00 00 08 00 00 00 09 00 00 00 0A 00 00 00 0B 00 00 00 0C 00 00 00 0D 00 00 00 0E 00 00 00 0F 00 00 00 10 00 00 00 11 00 00 00) */;
+
+	internal static readonly Struct3 struct3_1/* Not supported: data(10 00 00 00 0E 00 00 00 0C 00 00 00 0A 00 00 00 08 00 00 00 06 00 00 00 04 00 00 00 02 00 00 00 00 00 00 00) */;
+
+	internal static readonly Struct0 struct0_0/* Not supported: data(06 04 4B 04 C3 09) */;
+
+	internal static readonly Struct6 struct6_0/* Not supported: data(00 00 00 00 00 2B 01 00 00 1E 00 00 00 98 3A 00 00 02 00 01 00 CD CC 4C 3E 68 42 00 00 03 00 01 00 CD CC 4C 3D 38 4A 00 00 05 00 01 00 CD CC 4C 3E 08 52 00 00 02 00 02 00 00 00 00 3F D8 59 00 00 05 00 02 00 9A 99 99 3E A8 61 00 00 08 00 01 00 CD CC 4C 3D 78 69 00 00 03 00 02 00 CD CC CC 3D 48 71 00 00 04 00 01 00 00 00 00 40 18 79 00 00 02 00 03 00 00 00 40 3F E8 80 00 00 03 00 03 00 9A 99 19 3E B8 88 00 00 05 00 03 00 00 00 00 3F 88 90 00 00 07 00 01 00 9A 99 99 3E 70 94 00 00 08 00 02 00 0A D7 A3 3D 58 98 00 00 04 00 02 00 00 00 40 40 28 A0 00 00 01 00 01 00 CD CC 4C 3E C8 AF 00 00 03 00 04 00 CD CC 4C 3E 50 C3 00 00 07 00 02 00 00 00 00 3F D8 D6 00 00 02 00 04 00 00 00 80 3F 60 EA 00 00 08 00 03 00 8F C2 F5 3D E8 FD 00 00 05 00 04 00 33 33 33 3F 70 11 01 00 08 00 04 00 9A 99 19 3E F8 24 01 00 01 00 02 00 00 00 00 3F 80 38 01 00 04 00 03 00 00 00 80 40 08 4C 01 00 07 00 03 00 33 33 33 3F 90 5F 01 00 04 00 04 00 00 00 A0 40 18 73 01 00 07 00 04 00 66 66 66 3F A0 86 01 00 01 00 03 00 00 00 40 3F B0 AD 01 00 06 00 01 00 CD CC 4C 3D 30 EC 01 00 01 00 04 00 00 00 80 3F F0 49 02 00 06 00 02 00 CD CC CC 3D 2C 01 00 00 1E FF FF FF 98 3A 00 00 02 00 01 00 CD CC 4C 3E 68 42 00 00 03 00 01 00 CD CC 4C 3D 38 4A 00 00 05 00 01 00 CD CC 4C 3E 08 52 00 00 02 00 02 00 00 00 00 3F D8 59 00 00 05 00 02 00 9A 99 99 3E A8 61 00 00 08 00 01 00 CD CC 4C 3D 78 69 00 00 03 00 02 00 CD CC CC 3D 48 71 00 00 04 00 01 00 00 00 00 40 18 79 00 00 02 00 03 00 00 00 40 3F E8 80 00 00 03 00 03 00 9A 99 19 3E B8 88 00 00 05 00 03 00 00 00 00 3F 88 90 00 00 07 00 01 00 9A 99 99 3E 70 94 00 00 08 00 02 00 0A D7 A3 3D 58 98 00 00 04 00 02 00 00 00 40 40 28 A0 00 00 01 00 01 00 CD CC 4C 3E C8 AF 00 00 03 00 04 00 CD CC 4C 3E 50 C3 00 00 07 00 02 00 00 00 00 3F D8 D6 00 00 02 00 04 00 00 00 80 3F 60 EA 00 00 08 00 03 00 8F C2 F5 3D E8 FD 00 00 05 00 04 00 33 33 33 3F 70 11 01 00 08 00 04 00 9A 99 19 3E F8 24 01 00 01 00 02 00 00 00 00 3F 80 38 01 00 04 00 03 00 00 00 80 40 08 4C 01 00 07 00 03 00 33 33 33 3F 90 5F 01 00 04 00 04 00 00 00 A0 40 18 73 01 00 07 00 04 00 66 66 66 3F A0 86 01 00 01 00 03 00 00 00 40 3F B0 AD 01 00 06 00 01 00 CD CC 4C 3D 30 EC 01 00 01 00 04 00 00 00 80 3F F0 49 02 00 06 00 02 00 CD CC CC 3D 00) */;
+
+	internal static readonly Struct3 struct3_2/* Not supported: data(00 00 00 00 02 00 00 00 04 00 00 00 06 00 00 00 08 00 00 00 0A 00 00 00 0C 00 00 00 0E 00 00 00 10 00 00 00) */;
+
+	internal static readonly Struct4 struct4_0/* Not supported: data(03 00 00 00 03 00 00 00 03 00 00 00 05 00 00 00 07 00 00 00 05 00 00 00 0A 00 00 00 0F 00 00 00 14 00 00 00 19 00 00 00 1E 00 00 00) */;
+
+	internal static readonly Struct3 struct3_3/* Not supported: data(01 00 00 00 03 00 00 00 05 00 00 00 07 00 00 00 09 00 00 00 0B 00 00 00 0D 00 00 00 0F 00 00 00 11 00 00 00) */;
+
+	internal static readonly Struct3 BA9F71FD01589248D38EAAFA885E7646A946E3B64D88277B7D1B5BE2E008B462/* Not supported: data(0F 00 00 00 1E 00 00 00 32 00 00 00 3C 00 00 00 50 00 00 00 64 00 00 00 78 00 00 00 8C 00 00 00 A0 00 00 00) */;
+
+	internal static readonly Struct2 F12DD12340CB84E4D0D9958D62BE7C59BB8F7243A7420FD043177AC542A26AAA/* Not supported: data(00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F 20 21 22) */;
+
+	internal static readonly Struct1 F59A7E5E5B6B39D159871E007864FE1FAE8F987A09C261D96D204E939E6A07B3/* Not supported: data(01 00 00 00 02 00 00 00 03 00 00 00 05 00 00 00 07 00 00 00 09 00 00 00) */;
+}

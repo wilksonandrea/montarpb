@@ -1,0 +1,33 @@
+using Plugin.Core;
+using Plugin.Core.Enums;
+using Server.Game;
+using Server.Game.Network;
+using Server.Game.Network.ServerPacket;
+using System;
+
+namespace Server.Game.Network.ClientPacket
+{
+	public class PROTOCOL_CLAN_WAR_CANCEL_MATCHMAKING_REQ : GameClientPacket
+	{
+		public PROTOCOL_CLAN_WAR_CANCEL_MATCHMAKING_REQ()
+		{
+		}
+
+		public override void Read()
+		{
+		}
+
+		public override void Run()
+		{
+			try
+			{
+				this.Client.SendPacket(new PROTOCOL_CLAN_WAR_CANCEL_MATCHMAKING_ACK());
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(string.Concat("PROTOCOL_CLAN_WAR_CANCEL_MATCHMAKING_REQ: ", exception.Message), LoggerType.Error, exception);
+			}
+		}
+	}
+}

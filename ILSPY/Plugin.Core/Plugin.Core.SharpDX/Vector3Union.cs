@@ -1,0 +1,13 @@
+using System.Runtime.InteropServices;
+
+namespace Plugin.Core.SharpDX;
+
+[StructLayout(LayoutKind.Explicit)]
+public struct Vector3Union
+{
+	[FieldOffset(0)]
+	public Vector3 Vec3;
+
+	[FieldOffset(0)]
+	public RawVector3 RawVec3;
+}

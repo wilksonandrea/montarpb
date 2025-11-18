@@ -1,0 +1,25 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Server.Game.Network.ServerPacket.PROTOCOL_CS_CREATE_CLAN_ACK
+// Assembly: Server.Game, Version=1.1.2510.3, Culture=neutral, PublicKeyToken=null
+// MVID: 0D150AF8-D042-4337-9729-D068C51BAF9E
+// Assembly location: C:\Users\Administrator\Desktop\unpack\Server.Game.dll
+
+using Plugin.Core.Models;
+using Server.Game.Data.Models;
+
+#nullable disable
+namespace Server.Game.Network.ServerPacket;
+
+public class PROTOCOL_CS_CREATE_CLAN_ACK : GameServerPacket
+{
+  private readonly Account account_0;
+  private readonly ClanModel clanModel_0;
+  private readonly uint uint_0;
+
+  public virtual void Write() => this.WriteH((short) 841);
+
+  public PROTOCOL_CS_CREATE_CLAN_ACK(uint int_2)
+  {
+    ((PROTOCOL_CS_COMMISSION_STAFF_ACK) this).uint_0 = int_2;
+  }
+}

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2a6e6285-729b-4915-a144-1da5377da3a5</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Server.Match</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Plugin.Core" />
+    <Reference Include="System.Xml" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Server\Match\MatchClient.cs" />
+    <Compile Include="Server\Match\MatchXender.cs" />
+    <Compile Include="Server\Match\MatchManager.cs" />
+    <Compile Include="Server\Match\Network\Packets\PROTOCOL_BOTS_ACTION.cs" />
+    <Compile Include="Server\Match\Network\Packets\PROTOCOL_CONNECT.cs" />
+    <Compile Include="Server\Match\Network\Packets\PROTOCOL_EVENTS_ACTION.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\ObjectMove.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\StageInfoObjControl.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\DropedWeapon.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\GrenadeSync.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\ObjectAnim.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\ObjectStatic.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\StageInfoObjStatic.cs" />
+    <Compile Include="Server\Match\Network\Actions\SubHead\StageInfoObjAnim.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\ActionForObjectSync.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\ActionState.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\Animation.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\CharaFireNHitData.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\DropWeapon.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\FireData.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\FireDataOnObject.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\FireNHitDataOnObject.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\GetWeaponForClient.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\GetWeaponForHost.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\GrenadeHit.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\HitData.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\HpSync.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\MissionData.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\PosRotation.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\RadioChat.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\SeizeDataForClient.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\SoundPosRotation.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\Suicide.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\UseObject.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\WeaponRecoil.cs" />
+    <Compile Include="Server\Match\Network\Actions\Event\WeaponSync.cs" />
+    <Compile Include="Server\Match\Data\XML\CharaStructureXML.cs" />
+    <Compile Include="Server\Match\Data\XML\ItemStatisticXML.cs" />
+    <Compile Include="Server\Match\Data\XML\MapStructureXML.cs" />
+    <Compile Include="Server\Match\Data\Utils\AllUtils.cs" />
+    <Compile Include="Server\Match\Data\Sync\MatchSync.cs" />
+    <Compile Include="Server\Match\Data\Sync\Server\SendMatchInfo.cs" />
+    <Compile Include="Server\Match\Data\Sync\Client\MatchRoundSync.cs" />
+    <Compile Include="Server\Match\Data\Sync\Client\RemovePlayerSync.cs" />
+    <Compile Include="Server\Match\Data\Sync\Client\RespawnSync.cs" />
+    <Compile Include="Server\Match\Data\Models\ItemsStatistic.cs" />
+    <Compile Include="Server\Match\Data\Models\ActionModel.cs" />
+    <Compile Include="Server\Match\Data\Models\AnimModel.cs" />
+    <Compile Include="Server\Match\Data\Models\AssistServerData.cs" />
+    <Compile Include="Server\Match\Data\Models\BombPosition.cs" />
+    <Compile Include="Server\Match\Data\Models\CharaModel.cs" />
+    <Compile Include="Server\Match\Data\Models\DeathServerData.cs" />
+    <Compile Include="Server\Match\Data\Models\DeffectModel.cs" />
+    <Compile Include="Server\Match\Data\Models\MapModel.cs" />
+    <Compile Include="Server\Match\Data\Models\ObjectHitInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\ObjectInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\ObjectModel.cs" />
+    <Compile Include="Server\Match\Data\Models\PacketModel.cs" />
+    <Compile Include="Server\Match\Data\Models\PlayerModel.cs" />
+    <Compile Include="Server\Match\Data\Models\Equipment.cs" />
+    <Compile Include="Server\Match\Data\Models\RoomModel.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\ObjectMoveInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\StageControlInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\DropedWeaponInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\GrenadeInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\ObjectAnimInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\ObjectStaticInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\StageAnimInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\SubHead\StageStaticInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\HPSyncInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\SeizeDataForClientInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\SoundPosRotationInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\WeaponRecoilInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\ActionStateInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\AnimationInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\CharaFireNHitDataInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\DropWeaponInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\FireDataInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\FireDataObjectInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\FireNHitDataObjectInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\GrenadeHitInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\HitDataInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\MissionDataInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\PosRotationInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\RadioChatInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\SuicideInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\UseObjectInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\WeaponClient.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\WeaponHost.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\WeaponSyncInfo.cs" />
+    <Compile Include="Server\Match\Data\Models\Event\Event\ActionObjectInfo.cs" />
+    <Compile Include="Server\Match\Data\Managers\AssistManager.cs" />
+    <Compile Include="Server\Match\Data\Managers\RoomsManager.cs" />
+    <Compile Include="Server\Match\Data\Managers\DamageManager.cs" />
+    <Compile Include="Server\Match\Data\Enums\CharaHitPart.cs" />
+    <Compile Include="Server\Match\Data\Enums\ActionFlag.cs" />
+    <Compile Include="Server\Match\Data\Enums\BombFlag.cs" />
+    <Compile Include="Server\Match\Data\Enums\CharaResId.cs" />
+    <Compile Include="Server\Match\Data\Enums\CharaMoves.cs" />
+    <Compile Include="Server\Match\Data\Enums\HitType.cs" />
+    <Compile Include="Server\Match\Data\Enums\ObjectType.cs" />
+    <Compile Include="Server\Match\Data\Enums\UdpGameEvent.cs" />
+    <Compile Include="Server\Match\Data\Enums\UdpSubHead.cs" />
+    <Compile Include="Server\Match\Data\Enums\WeaponSyncType.cs" />
+    <Compile Include="dummy_ptr\{3c03a772-ca25-42e6-b519-6caf572c6109}.cs" />
+  </ItemGroup>
+</Project>

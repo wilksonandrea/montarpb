@@ -1,0 +1,2 @@
+C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Auth\obj\Debug\Server.Auth.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Auth\obj\Debug\Server.Auth.csproj.CoreCompileInputs.cache

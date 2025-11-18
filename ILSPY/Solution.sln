@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Game", "Server.Game\Server.Game.csproj", "{6F22E1E4-EAC9-4CF9-B80B-C55DBDD943B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Core", "Plugin.Core\Plugin.Core.csproj", "{CC44D9CB-32BA-4AC3-917F-A3A530744CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSMMonitor-unp", "OSMMonitor-unp\OSMMonitor-unp.csproj", "{E0B31768-20B6-4441-AB74-7587FF8CD95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Match", "Server.Match\Server.Match.csproj", "{26F8723A-9B07-43FC-81DA-C487FCC5B392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Auth", "Server.Auth\Server.Auth.csproj", "{35BFE7F5-71F6-4498-B46A-2F59EEDA14B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F22E1E4-EAC9-4CF9-B80B-C55DBDD943B3}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{6F22E1E4-EAC9-4CF9-B80B-C55DBDD943B3}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{6F22E1E4-EAC9-4CF9-B80B-C55DBDD943B3}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{6F22E1E4-EAC9-4CF9-B80B-C55DBDD943B3}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{CC44D9CB-32BA-4AC3-917F-A3A530744CB1}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{CC44D9CB-32BA-4AC3-917F-A3A530744CB1}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{CC44D9CB-32BA-4AC3-917F-A3A530744CB1}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{CC44D9CB-32BA-4AC3-917F-A3A530744CB1}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{E0B31768-20B6-4441-AB74-7587FF8CD95E}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{E0B31768-20B6-4441-AB74-7587FF8CD95E}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{E0B31768-20B6-4441-AB74-7587FF8CD95E}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{E0B31768-20B6-4441-AB74-7587FF8CD95E}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{26F8723A-9B07-43FC-81DA-C487FCC5B392}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{26F8723A-9B07-43FC-81DA-C487FCC5B392}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{26F8723A-9B07-43FC-81DA-C487FCC5B392}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{26F8723A-9B07-43FC-81DA-C487FCC5B392}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{35BFE7F5-71F6-4498-B46A-2F59EEDA14B3}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{35BFE7F5-71F6-4498-B46A-2F59EEDA14B3}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{35BFE7F5-71F6-4498-B46A-2F59EEDA14B3}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{35BFE7F5-71F6-4498-B46A-2F59EEDA14B3}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

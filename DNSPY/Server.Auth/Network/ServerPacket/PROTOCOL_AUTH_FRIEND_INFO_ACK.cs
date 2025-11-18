@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using Plugin.Core.Models;
+using Plugin.Core.Utility;
+
+namespace Server.Auth.Network.ServerPacket
+{
+	// Token: 0x02000010 RID: 16
+	public class PROTOCOL_AUTH_FRIEND_INFO_ACK : AuthServerPacket
+	{
+		// Token: 0x06000052 RID: 82 RVA: 0x000025B6 File Offset: 0x000007B6
+		public PROTOCOL_AUTH_FRIEND_INFO_ACK(List<FriendModel> list_1)
+		{
+			this.list_0 = list_1;
+		}
+
+		// Token: 0x06000053 RID: 83 RVA: 0x00004214 File Offset: 0x00002414
+		public override void Write()
+		{
+			base.WriteH(1810);
+			base.WriteC((byte)this.list_0.Count);
+			foreach (FriendModel friendModel in this.list_0)
+			{
+				PlayerInfo info = friendModel.Info;
+				if (info == null)
+				{
+					base.WriteB(new byte[24]);
+				}
+				else
+				{
+					base.WriteC((byte)(info.Nickname.Length + 1));
+					base.WriteN(info.Nickname, info.Nickname.Length + 2, "UTF-16LE");
+					base.WriteQ(info.PlayerId);
+					base.WriteD(ComDiv.GetFriendStatus(friendModel));
+					base.WriteD(uint.MaxValue);
+					base.WriteC((byte)info.Rank);
+					base.WriteB(new byte[6]);
+				}
+			}
+		}
+
+		// Token: 0x04000023 RID: 35
+		private readonly List<FriendModel> list_0;
+	}
+}

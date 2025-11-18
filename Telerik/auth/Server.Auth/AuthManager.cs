@@ -1,0 +1,241 @@
+using Plugin.Core;
+using Plugin.Core.Enums;
+using Plugin.Core.JSON;
+using Plugin.Core.Models;
+using Plugin.Core.Utility;
+using Server.Auth.Data.Models;
+using Server.Auth.Network;
+using System;
+using System.Collections;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Sockets;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Threading;
+
+namespace Server.Auth
+{
+	public class AuthManager
+	{
+		private readonly string string_0;
+
+		private readonly int int_0;
+
+		public readonly int ServerId;
+
+		public ServerConfig Config;
+
+		public Socket MainSocket;
+
+		public bool ServerIsClosed;
+
+		public AuthManager(int int_1, string string_1, int int_2)
+		{
+			this.string_0 = string_1;
+			this.int_0 = int_2;
+			this.ServerId = int_1;
+		}
+
+		public void AddSession(AuthClient Client)
+		{
+			try
+			{
+				if (Client != null)
+				{
+					DateTime dateTime = DateTimeUtil.Now();
+					int ınt32 = 1;
+					while (ınt32 < 100000)
+					{
+						if (AuthXender.SocketSessions.ContainsKey(ınt32) || !AuthXender.SocketSessions.TryAdd(ınt32, Client))
+						{
+							ınt32++;
+						}
+						else
+						{
+							Client.SessionDate = dateTime;
+							Client.SessionId = ınt32;
+							Client.SessionSeed = (ushort)(new Random(dateTime.Millisecond)).Next(ınt32, 32767);
+							Client.StartSession();
+							return;
+						}
+					}
+					CLogger.Print(string.Format("Unable to add session list. IPAddress: {0}; Date: {1}", Client.GetIPAddress(), dateTime), LoggerType.Warning, null);
+					Client.Close(500, true);
+				}
+				else
+				{
+					CLogger.Print("Destroyed after failed to add to list.", LoggerType.Warning, null);
+				}
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(exception.Message, LoggerType.Error, exception);
+			}
+		}
+
+		private void method_0()
+		{
+			try
+			{
+				this.MainSocket.BeginAccept(new AsyncCallback(this.method_1), this.MainSocket);
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(exception.Message, LoggerType.Error, exception);
+			}
+		}
+
+		private void method_1(IAsyncResult iasyncResult_0)
+		{
+			if (this.ServerIsClosed)
+			{
+				return;
+			}
+			Socket asyncState = iasyncResult_0.AsyncState as Socket;
+			Socket socket = null;
+			try
+			{
+				socket = asyncState.EndAccept(iasyncResult_0);
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(string.Format("Accept Callback Date: {0}; Exception: {1}", DateTimeUtil.Now(), exception.Message), LoggerType.Error, null);
+			}
+			this.method_2(socket);
+		}
+
+		private void method_2(Socket socket_0)
+		{
+			try
+			{
+				Thread.Sleep(5);
+				this.method_0();
+				if (socket_0 != null)
+				{
+					this.AddSession(new AuthClient(this.ServerId, socket_0));
+				}
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(exception.Message, LoggerType.Error, exception);
+			}
+		}
+
+		public bool RemoveSession(AuthClient Client)
+		{
+			AuthClient authClient;
+			bool flag;
+			try
+			{
+				if (Client == null || Client.SessionId == 0)
+				{
+					flag = false;
+				}
+				else if (!AuthXender.SocketSessions.ContainsKey(Client.SessionId) || !AuthXender.SocketSessions.TryRemove(Client.SessionId, out authClient))
+				{
+					Client = null;
+					return false;
+				}
+				else
+				{
+					flag = true;
+				}
+			}
+			catch (Exception exception1)
+			{
+				Exception exception = exception1;
+				CLogger.Print(exception.Message, LoggerType.Error, exception);
+				return false;
+			}
+			return flag;
+		}
+
+		public Account SearchActiveClient(long PlayerId)
+		{
+			Account account;
+			if (AuthXender.SocketSessions.Count == 0)
+			{
+				return null;
+			}
+			using (IEnumerator<AuthClient> enumerator = AuthXender.SocketSessions.Values.GetEnumerator())
+			{
+				while (enumerator.MoveNext())
+				{
+					Account player = enumerator.Current.Player;
+					if (player == null || player.PlayerId != PlayerId)
+					{
+						continue;
+					}
+					account = player;
+					return account;
+				}
+				return null;
+			}
+			return account;
+		}
+
+		public int SendPacketToAllClients(AuthServerPacket Packet)
+		{
+			int ınt32 = 0;
+			if (AuthXender.SocketSessions.Count == 0)
+			{
+				return ınt32;
+			}
+			byte[] completeBytes = Packet.GetCompleteBytes("AuthManager.SendPacketToAllClients");
+			foreach (AuthClient value in AuthXender.SocketSessions.Values)
+			{
+				Account player = value.Player;
+				if (player == null || !player.IsOnline)
+				{
+					continue;
+				}
+				player.SendCompletePacket(completeBytes, Packet.GetType().Name);
+				ınt32++;
+			}
+			return ınt32;
+		}
+
+		public bool Start()
+		{
+			bool flag;
+			try
+			{
+				this.Config = ServerConfigJSON.GetConfig(ConfigLoader.ConfigId);
+				this.MainSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+				IPEndPoint pEndPoint = new IPEndPoint(IPAddress.Parse(this.string_0), this.int_0);
+				this.MainSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
+				this.MainSocket.SetIPProtectionLevel(IPProtectionLevel.EdgeRestricted);
+				this.MainSocket.DontFragment = false;
+				this.MainSocket.NoDelay = true;
+				this.MainSocket.Bind(pEndPoint);
+				this.MainSocket.Listen(ConfigLoader.BackLog);
+				CLogger.Print(string.Format("Auth Serv Address {0}:{1}", this.string_0, this.int_0), LoggerType.Info, null);
+				ThreadPool.QueueUserWorkItem((object object_0) => {
+					try
+					{
+						this.method_0();
+					}
+					catch (Exception exception1)
+					{
+						Exception exception = exception1;
+						CLogger.Print(string.Concat("Error processing TCP packet from ", this.string_0, ": ", exception.Message), LoggerType.Error, exception);
+					}
+				});
+				flag = true;
+			}
+			catch (Exception exception3)
+			{
+				Exception exception2 = exception3;
+				CLogger.Print(exception2.Message, LoggerType.Error, exception2);
+				flag = false;
+			}
+			return flag;
+		}
+	}
+}

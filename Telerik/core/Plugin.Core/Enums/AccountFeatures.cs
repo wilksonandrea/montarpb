@@ -1,0 +1,19 @@
+using System;
+
+namespace Plugin.Core.Enums
+{
+	public enum AccountFeatures : uint
+	{
+		PLAYTIME_ONLY = 256,
+		CLAN_ONLY = 4096,
+		TICKET_ONLY = 16384,
+		CLAN_COUPON = 30590,
+		TAGS_ONLY = 67108864,
+		TOKEN_ONLY = 2121728000,
+		TOKEN_CLAN = 2121767220,
+		RATING_BOTH = 2147483384,
+		TEST_MODE = 2147483385,
+		FROM_SNIFF = 2389079930,
+		ALL = 2389079934
+	}
+}

@@ -1,0 +1,2 @@
+C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Server.Auth\obj\Debug\Server.Auth.csproj.AssemblyReference.cache
+C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Server.Auth\obj\Debug\Server.Auth.csproj.CoreCompileInputs.cache

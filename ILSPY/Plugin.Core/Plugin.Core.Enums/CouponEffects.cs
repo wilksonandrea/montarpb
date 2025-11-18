@@ -1,0 +1,52 @@
+using System;
+
+namespace Plugin.Core.Enums;
+
+[Flags]
+public enum CouponEffects : long
+{
+	Defense90 = 1L,
+	Ketupat = 2L,
+	Defense20 = 4L,
+	HollowPointPlus = 8L,
+	Defense10 = 0x10L,
+	HP5 = 0x20L,
+	JackHollowPoint = 0x40L,
+	ExtraGrenade = 0x80L,
+	C4SpeedKit = 0x100L,
+	HollowPoint = 0x200L,
+	FullMetalJack = 0x400L,
+	Defense5 = 0x800L,
+	Invincible = 0x1000L,
+	HP10 = 0x2000L,
+	QuickChangeReload = 0x4000L,
+	QuickChangeWeapon = 0x8000L,
+	FlashProtect = 0x10000L,
+	GetDroppedWeapon = 0x20000L,
+	Ammo40 = 0x40000L,
+	Respawn20 = 0x80000L,
+	Respawn30 = 0x100000L,
+	Respawn50 = 0x200000L,
+	Respawn100 = 0x400000L,
+	Ammo10 = 0x800000L,
+	ExtraThrowGrenade = 0x4000000L,
+	Unk1 = 0x8000000L,
+	Unk2 = 0x10000000L,
+	Unk3 = 0x20000000L,
+	Unk4 = 0x40000000L,
+	Camoflage50 = 0x80000000L,
+	Camoflage99 = 0x100000000L,
+	Unk7 = 0x200000000L,
+	Unk8 = 0x400000000L,
+	Unk9 = 0x800000000L,
+	Unk10 = 0x1000000000L,
+	Unk11 = 0x2000000000L,
+	Unk12 = 0x4000000000L,
+	Unk13 = 0x8000000000L,
+	Unk14 = 0x10000000000L,
+	Unk15 = 0x20000000000L,
+	Unk16 = 0x40000000000L,
+	Unk17 = 0x80000000000L,
+	Unk18 = 0x100000000000L,
+	Unk19 = 0x200000000000L
+}

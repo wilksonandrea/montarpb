@@ -1,0 +1,2 @@
+C:\Users\Administrator\Desktop\SRC\DNSPY2\OSM-Monitor\obj\Debug\OSM-Monitor.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SRC\DNSPY2\OSM-Monitor\obj\Debug\OSM-Monitor.csproj.CoreCompileInputs.cache
