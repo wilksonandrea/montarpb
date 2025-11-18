@@ -1,2 +1,0 @@
-C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Plugin.Core\obj\Debug\Plugin.Core.csproj.AssemblyReference.cache
-C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Plugin.Core\obj\Debug\Plugin.Core.csproj.CoreCompileInputs.cache

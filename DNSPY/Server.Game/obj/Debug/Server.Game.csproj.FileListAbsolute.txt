@@ -1,2 +1,0 @@
-C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Server.Game\obj\Debug\Server.Game.csproj.AssemblyReference.cache
-C:\Users\Wilkson\Downloads\ALL DUMP CLEANS\DNSPY\Server.Game\obj\Debug\Server.Game.csproj.CoreCompileInputs.cache
