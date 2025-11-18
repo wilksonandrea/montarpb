@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSM-Monitor", "OSM-Monitor\OSM-Monitor.csproj", "{52C7D40A-9D21-4ED7-B176-811FA64B2837}"
+	ProjectSection(ProjectDependencies) = postProject
+		{52C7D40A-9D21-4ED7-B176-811FA64B2838} = {52C7D40A-9D21-4ED7-B176-811FA64B2838}
+		{52C7D40A-9D21-4ED7-B176-811FA64B2839} = {52C7D40A-9D21-4ED7-B176-811FA64B2839}
+		{52C7D40A-9D21-4ED7-B176-811FA64B283A} = {52C7D40A-9D21-4ED7-B176-811FA64B283A}
+		{52C7D40A-9D21-4ED7-B176-811FA64B283B} = {52C7D40A-9D21-4ED7-B176-811FA64B283B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Core", "Plugin.Core\Plugin.Core.csproj", "{52C7D40A-9D21-4ED7-B176-811FA64B2838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Auth", "Server.Auth\Server.Auth.csproj", "{52C7D40A-9D21-4ED7-B176-811FA64B2839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Game", "Server.Game\Server.Game.csproj", "{52C7D40A-9D21-4ED7-B176-811FA64B283A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Match", "Server.Match\Server.Match.csproj", "{52C7D40A-9D21-4ED7-B176-811FA64B283B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52C7D40A-9D21-4ED7-B176-811FA64B2837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B2839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C7D40A-9D21-4ED7-B176-811FA64B283B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
