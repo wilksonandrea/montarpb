@@ -1,2 +1,0 @@
-C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Game\obj\Debug\Server.Game.csproj.AssemblyReference.cache
-C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Game\obj\Debug\Server.Game.csproj.CoreCompileInputs.cache

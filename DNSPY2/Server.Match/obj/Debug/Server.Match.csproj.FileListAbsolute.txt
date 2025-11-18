@@ -1,2 +1,0 @@
-C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Match\obj\Debug\Server.Match.csproj.AssemblyReference.cache
-C:\Users\Administrator\Desktop\SRC\DNSPY2\Server.Match\obj\Debug\Server.Match.csproj.CoreCompileInputs.cache
